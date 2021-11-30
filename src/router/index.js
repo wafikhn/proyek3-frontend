@@ -454,7 +454,7 @@ const routes = [
   },
   {
     path: "/penilaian",
-    meta: { requiresAuth: true },
+    meta: { requiresAuth: false },
     component: () => import("../views/penilaian/PenilaianMain"),
     children: [
       {
@@ -467,7 +467,7 @@ const routes = [
       },
       {
         path: "/penilaian/input-nilai-matkul/:id",
-        meta: { requiresAuth: true },
+        meta: { requiresAuth: false },
         name: "Input Nilai Matkul",
         component: () =>
           import(
@@ -477,7 +477,7 @@ const routes = [
       },
       {
         path: "/penilaian/dashboard-nilai-mahasiswa",
-        meta: { requiresAuth: true },
+        meta: { requiresAuth: false },
         name: "Dashboard Nilai Mahasiswa",
         component: () =>
           import(
@@ -486,7 +486,7 @@ const routes = [
       },
       {
         path: "/penilaian/dashboard-nilai-dosen-pengampu",
-        meta: { requiresAuth: true },
+        meta: { requiresAuth: false },
         name: "Dashboard Nilai Section",
         component: () =>
           import(
@@ -495,7 +495,7 @@ const routes = [
       },
       {
         path: "/penilaian/dashboard-nilai-dosen-pengampu/:id",
-        meta: { requiresAuth: true },
+        meta: { requiresAuth: false },
         name: "Dashboard Nilai Dosen Pengampu",
         component: () =>
           import(
@@ -504,7 +504,7 @@ const routes = [
       },
       {
         path: "/penilaian/transkripsi-nilai/:id",
-        meta: { requiresAuth: true },
+        meta: { requiresAuth: false },
         name: "Transkripsi Nilai",
         component: () =>
           import(
